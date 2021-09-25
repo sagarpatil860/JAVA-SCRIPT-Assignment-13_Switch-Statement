@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<h2>Button action on text input and switch case use</h2> 
+
+  <label for="fname">Select a no. from 1 to 4 only:</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+ <br><br>
+ 
+ 
+ <button id="om">submit</button>
+
+<p>If you click the "Submit" button, there will be alert shown matching your case from switch function.</p>
+
+<script>
+    let x=0;
+ document.getElementById("om").addEventListener("click", myFunction);
+function myFunction() { 
+    let  z=undefined;
+ z= document.getElementById("fname").value;
+ console.log(z);
+x=parseInt(z);
+console.log(x);
+alert('You have entered'+ x);
+ const y=0;
+
+
+switch (x) {
+  case 1:
+    alert("YOU HAVE SELECTED YOUR PET AS DOG");
+    break;
+  case 2:
+    alert("YOU HAVE SELECTED YOUR PET AS CAT");
+    break;
+    case 3:
+    alert("YOU HAVE SELECTED YOUR PET AS PARROT");
+    break;
+    case 4:
+    alert("YOU HAVE SELECTED YOUR PET AS OWL");
+    break;
+  default:
+    alert("SELECT NO ONLY FROM 1 TO 4");
+}
+
+}
+</script>
+</body>
+</html>
